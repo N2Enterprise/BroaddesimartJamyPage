@@ -56,6 +56,26 @@ import Footer from "../components/Footer.astro";
 </Layout>
 
 <style>
+    body {
+     height: 100%;
+     overflow-y: hidden;
+  }
+    .Product {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(/images/bg1.jpg);
+      width: 100%;
+      min-height: calc(100vh - 52px);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   span.item {
     position: absolute;
     top: 40px;

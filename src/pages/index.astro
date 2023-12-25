@@ -6,68 +6,42 @@ import Footer from "../components/Footer.astro";
 <Layout title="home">
   <section transition:animate="slide"  class="home cursor-default px-8% text-white gap-4">
     <h1 class="slogan text-6xl font-semibold">
-      Find your <span
+      Broad Desi Mart <span
         class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
-        >Inspiration</span
-      > in each garment.
+        >Indian, Pakistan and South Asian</span
+      > Grocery store.
     </h1>
     <p class="max-w-2xl text-center parrafo">
-      Your favorite fashion store. Discover the latest trends and designs
-      unique in our clothing boutique.
+      our top destination for authentic Indian and Pakistani groceries in Weymouth, MA, also serving Quincy, Braintree, Boston, and neighboring towns. Discover a delightful shopping experience with a diverse range of products for everyday needs and special occasions. Immerse yourself in the rich flavors of India and Pakistan. Your go-to spot for an unparalleled grocery experience in the heart of the South Shore.
     </p>
 
     <div class="flex gap-6 mt-3">
-      <a class="button" href="/products"> <span>Products</span></a>
-      <a class="button" href="/"> <span>Contact</span></a>
+      <a class="button" href="/about"> <span>About us</span></a>
+      <a class="button" href="/contact"> <span>Contact</span></a>
+      <a class="button" href="/galary"> <span>Galary</span></a>
+
     </div>
   </section>
 
-  <section class="section-two relative px-8% py-10 flex flex-col gap-8">
-    <span class="item"></span>
+ 
 
-    <article>
-      <span class="flex gap-1 justify-center items-center">
-        <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">Your Success is Our Service</h1>
-        <img class="w-6" src="/images/arrow.svg" alt="">
-      </span>
-    </article>
-
-    <article class="art2 w-full text-white text-lg flex justify-between items-center flex-wrap">
-      <span class="item2"></span>
-      <span class="max-w-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, obcaecati vitae? Distinctio nisi cumque, perspiciatis vero dolorem enim sunt neque commodi facilis veritatis assumenda numquam asperiores, exercitationem quia ipsa adipisci! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ea, ipsum provident enim libero inventore rerum eligendi quos. Debitis ratione molestias esse voluptates accusantium sequi consequuntur vitae, modi ducimus unde!</span>
-      <img class="w-96 hover:animate-jump" src="/images/Service.svg" alt="">
-    </article>
-  </section>
-
-  <section class="section-three relative px-8% py-10 flex flex-col gap-8">
-    <span class="item3"></span>
-
-    <article>
-      <span class="flex gap-1 ">
-        <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold">Our Commitment and Purpose</h1>
-        <img class="w-6" src="/images/arrow.svg" alt="">
-      </span>
-    </article>
-
-    <article class="art2 w-full text-white text-lg flex justify-between items-center flex-wrap">
-      <img class="w-96 hover:animate-jump animate-once" src="/images/mision.svg" alt="">
-      <span class="item4"></span>
-      <span class="item5"></span>
-      <span class="max-w-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, obcaecati vitae? Distinctio nisi cumque, perspiciatis vero dolorem enim sunt neque commodi facilis veritatis assumenda numquam asperiores, exercitationem quia ipsa adipisci! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ea, ipsum provident enim libero inventore rerum eligendi quos. Debitis ratione molestias esse voluptates accusantium sequi consequuntur vitae, modi ducimus unde!</span>
-    </article>
-  </section>
+  
   <Footer/>
 
 </Layout>
 
 <style>
+  body {
+   height: 100%;
+   overflow-y: hidden;
+}
   .home {
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(/images/bg.webp);
+      url(/images/bg1.jpg);
     width: 100%;
     min-height: calc(100vh - 52px);
     background-position: center;
