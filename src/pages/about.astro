@@ -4,7 +4,7 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="About">
-  <section class="px-8% py-10 flex flex-col gap-24 text-white">
+  <section transition:animate="slide" class="home px-8% py-10 flex flex-col gap-24 text-white">
     <article class="flex flex-col gap-5">
       <span class="flex gap-1 justify-center items-center">
         <h1
@@ -30,6 +30,23 @@ import Footer from "../components/Footer.astro";
 </Layout>
 
 <style>
+   .home {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(/images/bg1.jpg);
+    width: 100%;
+    min-height: calc(100vh - 52px);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   span.item {
     position: absolute;
     top: 40px;
