@@ -11,5 +11,10 @@ export default defineConfig({
   ViewTransitions: true,
   output: "server",
   adapter: cloudflare(),
-  integrations: [tailwind(), react(), sitemap()]
+  site: 'https://broaddesimart.com',
+  integrations: [tailwind(), react(), sitemap(
+    {
+      filter: (page) => page !== 'https://broaddesimart.com/products1/' &&  page !== 'https://broaddesimart.com/gallery/',
+    }
+  )]
 });
